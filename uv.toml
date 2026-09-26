@@ -1,0 +1,7 @@
+# Project-level uv settings. These take precedence over the user-level
+# config (~/.config/uv/uv.toml).
+#
+# The user config sets `exclude-newer`, a supply-chain cooldown that hides
+# recently published packages. This project opts out: a date far in the
+# future means "no cutoff", so the newest releases are always visible.
+exclude-newer = "2100-01-01T00:00:00Z"

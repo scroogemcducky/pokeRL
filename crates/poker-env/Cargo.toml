@@ -1,0 +1,11 @@
+[package]
+name = "poker-env"
+description = "Authoritative poker simulator: game semantics, legal actions, payoffs."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+
+[lints]
+workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "poker-py"
+description = "Thin PyO3 bindings exposing poker-env to Python as poker._native."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+name = "_native"
+crate-type = ["cdylib"]
+
+[dependencies]
+poker-env = { path = "../poker-env" }
+pyo3 = "0.29.2"
+
+[lints]
+workspace = true
