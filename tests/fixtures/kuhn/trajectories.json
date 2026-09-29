@@ -1,0 +1,1454 @@
+[
+  {
+    "deal": [
+      "JACK",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "QUEEN"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "QUEEN"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "KING"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "JACK",
+      "KING"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "JACK",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "JACK"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "JACK"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "KING"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "KING"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "QUEEN",
+      "KING"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "QUEEN",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "KING",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -2,
+      2
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "JACK"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "JACK"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "JACK"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "JACK",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      -1,
+      1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "QUEEN"
+    ],
+    "actions": [
+      "CHECK_CALL",
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "CHECK_CALL"
+          ]
+        }
+      },
+      {
+        "actor": 0,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": [
+            "CHECK_CALL",
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "QUEEN"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "FOLD"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      1,
+      -1
+    ]
+  },
+  {
+    "deal": [
+      "KING",
+      "QUEEN"
+    ],
+    "actions": [
+      "BET_RAISE",
+      "CHECK_CALL"
+    ],
+    "steps": [
+      {
+        "actor": 0,
+        "legal_actions": [
+          "CHECK_CALL",
+          "BET_RAISE"
+        ],
+        "observation": {
+          "player": 0,
+          "card": "KING",
+          "history": []
+        }
+      },
+      {
+        "actor": 1,
+        "legal_actions": [
+          "FOLD",
+          "CHECK_CALL"
+        ],
+        "observation": {
+          "player": 1,
+          "card": "QUEEN",
+          "history": [
+            "BET_RAISE"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      2,
+      -2
+    ]
+  }
+]

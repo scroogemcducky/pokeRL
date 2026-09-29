@@ -3,7 +3,10 @@
 Fixtures here are available to every test module without importing.
 """
 
+import json
 from collections.abc import Callable, Sequence
+from pathlib import Path
+from typing import Any
 
 import pytest
 from poker.kuhn import ALL_DEALS, Action, Deal, KuhnState
@@ -40,3 +43,15 @@ def play() -> Play:
 def all_terminal_states() -> list[KuhnState]:
     """Every complete Kuhn hand: all deals x all legal action paths."""
     return [terminal for deal in ALL_DEALS for terminal in _walk(KuhnState(deal=deal))]
+
+
+@pytest.fixture(scope="session")
+def golden_kuhn_path() -> Path:
+    """Path of the committed Kuhn golden-trajectory file."""
+    return Path(__file__).parent / "fixtures" / "kuhn" / "trajectories.json"
+
+
+@pytest.fixture(scope="session")
+def kuhn_golden(golden_kuhn_path: Path) -> list[Any]:
+    """Every complete Kuhn hand, step by step, as committed JSON records."""
+    return json.loads(golden_kuhn_path.read_text())

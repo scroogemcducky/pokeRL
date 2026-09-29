@@ -2,7 +2,7 @@
 
 Every property of a state is derived from its deal and its public action history.
 
-Example
+Examples
 --------
 >>> from poker.kuhn import ALL_DEALS
 >>> len(ALL_DEALS)
@@ -91,7 +91,7 @@ class KuhnObservation:
 class KuhnState:
     """A(n immutable) Kuhn hand: a deal plus the actions taken so far.
 
-    Example
+    Examples
     --------
     >>> state = KuhnState(deal=(Card.JACK, Card.KING))
     >>> state.history
@@ -153,3 +153,71 @@ class KuhnState:
             msg = f"{action!r} is illegal after {self.history}"
             raise IllegalActionError(msg)
         return KuhnState(deal=self.deal, history=(*self.history, action))
+
+    def contributions(self) -> tuple[int, int]:
+        """Return the chips each player has put in so far: ante, bet, call.
+
+        Examples
+        --------
+        >>> state = KuhnState(deal=(Card.JACK, Card.KING), history=(Action.BET_RAISE,))
+        >>> state.contributions()
+        (2, 1)
+        """
+        chips = [1, 1]  # antes
+        for i, action in enumerate(self.history):
+            is_call = (
+                action == Action.CHECK_CALL and Action.BET_RAISE in self.history[:i]
+            )
+            if action == Action.BET_RAISE or is_call:
+                chips[i % 2] += 1
+        return (chips[0], chips[1])
+
+    def returns(self) -> tuple[int, int]:
+        """Return each player's net chip gain for the finished hand.
+
+        The winner takes what the loser put in, so the returns sum to zero.
+
+        Raises
+        ------
+        ValueError
+            If the hand is not terminal.
+
+        Examples
+        --------
+        >>> C = Action.CHECK_CALL
+        >>> KuhnState(deal=(Card.JACK, Card.KING), history=(C, C)).returns()
+        (-1, 1)
+        """
+        if not self.is_terminal():
+            msg = f"hand is not terminal after {self.history}"
+            raise ValueError(msg)
+        if self.history[-1] == Action.FOLD:
+            loser = (len(self.history) - 1) % 2  # whoever folded
+        else:
+            loser = 0 if self.deal[0] < self.deal[1] else 1  # showdown
+        won = self.contributions()[loser]
+        return (-won, won) if loser == 0 else (won, -won)
+
+    def observe(self, player: int) -> KuhnObservation:
+        """Return what ``player`` can see: their own card and the public history.
+
+        Built only from visible fields (an allowlist), so the opponent's card
+        cannot leak in.
+
+        Raises
+        ------
+        ValueError
+            If ``player`` is not 0 or 1.
+
+        Examples
+        --------
+        >>> state = KuhnState(deal=(Card.JACK, Card.KING))
+        >>> state.observe(1).card
+        <Card.KING: 2>
+        """
+        if player not in (0, 1):
+            msg = f"player must be 0 or 1, got {player}"
+            raise ValueError(msg)
+        return KuhnObservation(
+            player=player, card=self.deal[player], history=self.history
+        )
