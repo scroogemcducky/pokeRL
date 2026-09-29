@@ -1,8 +1,7 @@
-"""Tests for the pure-Python Kuhn poker oracle, ``poker.kuhn``.
+"""Tests for the Python Kuhn poker oracle, ``poker.kuhn``.
 
 The expected values in these tests are derived by hand from the rules of
-Kuhn poker, never by running the implementation. That independence is what
-lets the oracle be trusted as the reference for the Rust engine.
+Kuhn poker.
 
 Rules (Kuhn, 1950): three cards J < Q < K; each player antes 1 chip and gets
 one private card; one betting round with a fixed 1-chip bet. Player 0 acts
