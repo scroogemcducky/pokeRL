@@ -3,6 +3,11 @@
 Poker reinforcement learning: a Rust poker simulator,
 Python orchestration, and MLX for Apple Silicon. Architecture loosely inspired by [Pufferlib](https://github.com/PufferAI/PufferLib) (added as a subtree for agents to reference).
 
+Actor-critic networks with PPO to start with. A batched PyO3 interface will expose
+actor-relative observations, legal-action masks, actor IDs, and terminal payoffs
+through reusable Rust buffers. Currently, the Python Kuhn oracle is finished and
+tested. The plan is Kuhn -> Leduc -> Hold'em.
+
 ## Layout
 
 ```text
