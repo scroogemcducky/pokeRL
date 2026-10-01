@@ -8,8 +8,8 @@ Python orchestration, and MLX for Apple Silicon. Architecture loosely inspired b
 ```text
 crates/poker-env/  pure Rust simulator
 crates/poker-py/   thin PyO3 bindings -> poker._native
-python/poker/     Python package (orchestration, training, evaluation)
-tests/            pytest suite
+python/poker/      Python package (orchestration, training, evaluation)
+tests/             pytest suite
 ```
 
 ## Setup
